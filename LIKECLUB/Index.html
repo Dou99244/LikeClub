@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LikeClub - Club de Lectura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>📚 LikeClub</h1>
+                <p>Tu comunidad de lectores apasionados</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="showSection('libros')">Libros</a></li>
+                    <li><a href="#" onclick="showSection('clubes')">Clubes</a></li>
+                    <li><a href="#" onclick="showSection('reseñas')">Reseñas</a></li>
+                    <li><a href="#" onclick="showSection('usuarios')">Usuarios</a></li>
+                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <div class="container">
+            <!-- Sección Inicio -->
+            <section id="inicio" class="section active">
+                <h2>Bienvenido a LikeClub</h2>
+                <p>Únete a nuestra comunidad para discutir libros, compartir reseñas y participar en clubes de lectura. Explora nuestra biblioteca y conecta con otros lectores.</p>
+                <div class="hero">
+                    <img src="https://cdn.pixabay.com/photo/2016/07/31/16/24/banner-1559400_1280.jpg" alt="Banner de libros" class="hero-img">
+                    <div class="hero-text">
+                        <h1>Libro del Mes</h1>
+                        <p>"Cien Años de Soledad" de Gabriel García Márquez</p>
+                        <button class="btn">Ver Detalles</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Libros -->
+            <section id="libros" class="section">
+                <h2>Nuestros Libros</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Cien Años de Soledad</h3>
+                        <p>Autor: Gabriel García Márquez | Año: 1967</p>
+                        <p>Clásico de la literatura latinoamericana.</p>
+                        <button class="btn" onclick="alert('Libro seleccionado!')">Ver Más</button>
+                    </div>
+                    <div class="card">
+                        <h3>El Nombre del Viento</h3>
+                        <p>Autor: Patrick Rothfuss | Año: 2007</p>
+                        <p>Aventura épica de fantasía.</p>
+                        <button class="btn" onclick="alert('Libro seleccionado!')">Ver Más</button>
+                    </div>
+                    <div class="card">
+                        <h3>Sapiens</h3>
+                        <p>Autor: Yuval Noah Harari | Año: 2011</p>
+                        <p>Historia de la humanidad.</p>
+                        <button class="btn" onclick="alert('Libro seleccionado!')">Ver Más</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Clubes -->
+            <section id="clubes" class="section">
+                <h2>Clubes de Lectura</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Club General</h3>
+                        <p>Discusiones variadas sobre libros clásicos y modernos.</p>
+                        <button class="btn" onclick="alert('Unido al club!')">Unirse</button>
+                    </div>
+                    <div class="card">
+                        <h3>Club de Misterio</h3>
+                        <p>Enfocado en thrillers y suspense.</p>
+                        <button class="btn" onclick="alert('Unido al club!')">Unirse</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Reseñas -->
+            <section id="reseñas" class="section">
+                <h2>Reseñas Populares</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Reseña de "Cien Años de Soledad"</h3>
+                        <p>Usuario: Juan Pérez | Calificación: 10/10</p>
+                        <p>"Una obra maestra inolvidable."</p>
+                    </div>
+                    <div class="card">
+                        <h3>Reseña de "Sapiens"</h3>
+                        <p>Usuario: María García | Calificación: 9/10</p>
+                        <p>"Explicación fascinante de nuestra historia."</p>
+                    </div>
+                </div>
+                <form class="form-reseña">
+                    <h4>Agregar Reseña</h4>
+                    <input type="number" placeholder="Calificación (1-10)" min="1" max="10">
+                    <textarea placeholder="Tu comentario..."></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </section>
+
+            <!-- Sección Usuarios -->
+            <section id="usuarios" class="section">
+                <h2>Miembros del Club</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Juan Pérez</h3>
+                        <p>Email: juan@email.com | Fecha: 2024-01-01</p>
+                        <p>Administrador y amante de la ficción.</p>
+                    </div>
+                    <div class="card">
+                        <h3>María García</h3>
+                        <p>Email: maria@email.com | Fecha: 2024-02-15</p>
+                        <p>Especialista en no ficción.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LikeClub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section id="usuarios" class="section">
+                <!-- contenido -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 LikeClub. Todos los derechos reservados. | Contacto: info@likeclub.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
