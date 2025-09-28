@@ -1,9 +1,32 @@
-
+// JavaScript mejorado para navegación responsive (mobile y desktop)
 document.addEventListener('DOMContentLoaded', function() {
- 
+    // Mostrar sección por defecto (Inicio)
     showSection('inicio');
 
+    // Manejar clics en enlaces del menú (reemplaza onclick inline)
+    const navLinks = document.querySelectorAll('.nav a[data-section]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Evita recarga de página en mobile/desktop
+            const sectionId = this.getAttribute('data-section');
+            if (sectionId) {
+                showSection(sectionId);
+                toggleMenu(); // Cierra el menú hamburguesa
+            }
+        });
+    });
 
+    // Manejar botón de login (por separado)
+    const btnLogin = document.querySelector('.btn-login');
+    if (btnLogin) {
+        btnLogin.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Redirigiendo a login... (Integra con tu backend para autenticación con Usuarios).');
+            toggleMenu(); // Cierra menú si está abierto
+        });
+    }
+
+    // Manejar formulario de reseñas (ejemplo simple)
     const formResena = document.querySelector('.form-reseña');
     if (formResena) {
         formResena.addEventListener('submit', function(e) {
@@ -19,16 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    
-    const btnLogin = document.querySelector('.btn-login');
-    if (btnLogin) {
-        btnLogin.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Redirigiendo a login... (Integra con tu backend para autenticación con Usuarios).');
-        });
-    }
-
- 
+    // Cerrar menú al tocar fuera (mejora para mobile)
     document.addEventListener('click', function(e) {
         const nav = document.querySelector('.nav');
         const hamburger = document.querySelector('.hamburger');
@@ -38,28 +52,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Función para mostrar secciones
 function showSection(sectionId) {
-  
+    // Ocultar todas las secciones
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
         section.classList.remove('active');
     });
 
-   
+    // Mostrar la sección seleccionada
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
         targetSection.classList.add('active');
-    }
-
-   
-    if (targetSection) {
+        // Scroll suave a la sección
         targetSection.scrollIntoView({ behavior: 'smooth' });
     }
-
-   
-    toggleMenu();
 }
 
+// Función para toggle del menú hamburguesa
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    if (nav) {
+        nav.classList.toggle('active');
+    }
+}
 
 function toggleMenu() {
     const nav = document.querySelector('.nav');
@@ -67,3 +83,4 @@ function toggleMenu() {
         nav.classList.toggle('active');
     }
 }
+
