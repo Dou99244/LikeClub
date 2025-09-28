@@ -122,7 +122,7 @@ h2 {
 
 .hero-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
@@ -350,4 +350,5 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 
