@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>LikeClub - Club de Lectura</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+  
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -18,26 +20,26 @@
             <button class="hamburger" onclick="toggleMenu()">☰</button>
             <nav class="nav">
                 <ul>
-                    <li><a href="#" onclick="showSection('inicio'); toggleMenu()">Inicio</a></li>
-                    <li><a href="#" onclick="showSection('libros'); toggleMenu()">Libros</a></li>
-                    <li><a href="#" onclick="showSection('clubes'); toggleMenu()">Clubes</a></li>
-                    <li><a href="#" onclick="showSection('reseñas'); toggleMenu()">Reseñas</a></li>
-                    <li><a href="#" onclick="showSection('usuarios'); toggleMenu()">Usuarios</a></li>
-                    <li><a href="#" class="btn-login" onclick="toggleMenu()">Iniciar Sesión</a></li>
+                    <li><a href="#" data-section="inicio">Inicio</a></li>
+                    <li><a href="#" data-section="libros">Libros</a></li>
+                    <li><a href="#" data-section="clubes">Clubes</a></li>
+                    <li><a href="#" data-section="reseñas">Reseñas</a></li>
+                    <li><a href="#" data-section="usuarios">Usuarios</a></li>
+                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Contenido Principal -->
+    
     <main class="main">
         <div class="container">
-            <!-- Sección Inicio -->
+            
             <section id="inicio" class="section active">
                 <h2>Bienvenido a LikeClub</h2>
                 <p>Únete a nuestra comunidad para discutir libros, compartir reseñas y participar en clubes de lectura. Explora nuestra biblioteca y conecta con otros lectores.</p>
                 <div class="hero">
-                    <img src="https://cdn.pixabay.com/photo/2016/07/31/16/24/banner-1559400_1280.jpg" alt="Banner de libros" class="hero-img">
+                    <img src="https://via.placeholder.com/600x300?text=Libros+en+LikeClub" alt="Banner de libros" class="hero-img">
                     <div class="hero-text">
                         <h3>Libro del Mes</h3>
                         <p>"Cien Años de Soledad" de Gabriel García Márquez</p>
@@ -46,7 +48,6 @@
                 </div>
             </section>
 
-            <!-- Sección Libros -->
             <section id="libros" class="section">
                 <h2>Nuestros Libros</h2>
                 <div class="grid">
@@ -71,7 +72,6 @@
                 </div>
             </section>
 
-            <!-- Sección Clubes -->
             <section id="clubes" class="section">
                 <h2>Clubes de Lectura</h2>
                 <div class="grid">
@@ -88,7 +88,7 @@
                 </div>
             </section>
 
-            <!-- Sección Reseñas -->
+           
             <section id="reseñas" class="section">
                 <h2>Reseñas Populares</h2>
                 <div class="grid">
@@ -111,7 +111,7 @@
                 </form>
             </section>
 
-            <!-- Sección Usuarios -->
+        
             <section id="usuarios" class="section">
                 <h2>Miembros del Club</h2>
                 <div class="grid">
@@ -130,7 +130,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 LikeClub. Todos los derechos reservados. | Contacto: info@likeclub.com</p>
@@ -140,6 +140,11 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+    <script src="script.js"></script>
+</body>
+</html>
     <!-- Footer -->
     
+
 
