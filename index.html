@@ -15,14 +15,15 @@
                 <h1>📚 LikeClub</h1>
                 <p>Tu comunidad de lectores apasionados</p>
             </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
             <nav class="nav">
                 <ul>
-                    <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
-                    <li><a href="#" onclick="showSection('libros')">Libros</a></li>
-                    <li><a href="#" onclick="showSection('clubes')">Clubes</a></li>
-                    <li><a href="#" onclick="showSection('reseñas')">Reseñas</a></li>
-                    <li><a href="#" onclick="showSection('usuarios')">Usuarios</a></li>
-                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
+                    <li><a href="#" onclick="showSection('inicio'); toggleMenu()">Inicio</a></li>
+                    <li><a href="#" onclick="showSection('libros'); toggleMenu()">Libros</a></li>
+                    <li><a href="#" onclick="showSection('clubes'); toggleMenu()">Clubes</a></li>
+                    <li><a href="#" onclick="showSection('reseñas'); toggleMenu()">Reseñas</a></li>
+                    <li><a href="#" onclick="showSection('usuarios'); toggleMenu()">Usuarios</a></li>
+                    <li><a href="#" class="btn-login" onclick="toggleMenu()">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,9 +37,9 @@
                 <h2>Bienvenido a LikeClub</h2>
                 <p>Únete a nuestra comunidad para discutir libros, compartir reseñas y participar en clubes de lectura. Explora nuestra biblioteca y conecta con otros lectores.</p>
                 <div class="hero">
-                    <img src="https://cdn.pixabay.com/photo/2016/07/31/16/24/banner-1559400_1280.jpg" alt="Banner de libros" class="hero-img">
+                    <img src="https://via.placeholder.com/600x300?text=Libros+en+LikeClub" alt="Banner de libros" class="hero-img">
                     <div class="hero-text">
-                        <h1>Libro del Mes</h1>
+                        <h3>Libro del Mes</h3>
                         <p>"Cien Años de Soledad" de Gabriel García Márquez</p>
                         <button class="btn">Ver Detalles</button>
                     </div>
@@ -129,21 +130,6 @@
         </div>
     </main>
 
-   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LikeClub</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <main class="main">
-        <div class="container">
-            <section id="usuarios" class="section">
-                <!-- contenido -->
-            </section>
-        </div>
-    </main>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -154,3 +140,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+    <!-- Footer -->
+    
