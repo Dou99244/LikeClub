@@ -142,35 +142,34 @@ h2 {
 
 .card {
     background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(151, 130, 162, 0.25);
+    transition: box-shadow 0.3s ease;
+    max-width: 450px;
+    margin: 1rem auto;
 }
-
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(151, 130, 162, 0.4);
+    transform: none; 
 }
 
 .btn {
-    background: #5f4b64; /* color principal */
+    background: #6b597a; /* Color morado oscuro */
     color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    width: 100%;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    box-shadow: none;
     margin-top: 1rem;
-    font-size: 1rem;
-    min-height: 48px;
 }
 
 .btn:hover,
 .btn:active {
-    background: #4d3c52; /* tono más oscuro del morado */
+    background: #8b738f; /* tono más oscuro del morado */
 }
+
 
 /* Formulario de Reseñas */
 .form-reseña {
@@ -200,11 +199,20 @@ h2 {
 
 /* Footer */
 .footer {
-    background: #5f4b64; /* color principal */
+    background: #6b597a;
     color: white;
+    font-size: 0.9rem;
+    padding: 1rem 10px;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
+}
+.footer p, .footer a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f0ecf4; /* lila muy claro */
 }
 
 /* Responsive: Mobile y Tablet */
@@ -346,3 +354,4 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
