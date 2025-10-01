@@ -25,7 +25,7 @@ html {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #afa3bb 0%, #5f4b64 100%); /* degradado modificado */
+    background: linear-gradient(135deg, #afa3bb 0%, #5f4b64 100%); /* degradado morado */
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -80,14 +80,15 @@ html {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+/* Botón de login - ahora usa el color verde oliva como base */
 .btn-login {
-    background: #a2ac94; /* verde claro */
+    background: rgb(111, 119, 98); /* color reforzado: #6f7762 */
     color: white;
     font-weight: 600;
     border-radius: 12px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    box-shadow: 0 4px 8px rgba(162, 172, 148, 0.2);
+    box-shadow: 0 4px 8px rgba(111, 119, 98, 0.25);
     transition: all 0.3s ease;
     display: inline-block;
     text-align: center;
@@ -97,9 +98,9 @@ html {
 }
 
 .btn-login:hover {
-    background: #6f7762; /* verde oscuro */
+    background: rgb(95, 102, 84); /* tono ligeramente más oscuro */
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(162, 172, 148, 0.3);
+    box-shadow: 0 6px 12px rgba(111, 119, 98, 0.35);
 }
 
 .btn-login:active {
@@ -174,14 +175,15 @@ h2 {
     transform: none; 
 }
 
+/* Botones principales - ahora usan el verde oliva como base */
 .btn {
-    background: #6b597a; /* Color morado oscuro */
+    background: rgb(111, 119, 98); /* color reforzado */
     color: white;
     font-weight: 600;
     border-radius: 12px;
     padding: 1rem 1.5rem;
     font-size: 1.15rem;
-    box-shadow: 0 4px 8px rgba(107, 89, 122, 0.2);
+    box-shadow: 0 4px 8px rgba(111, 119, 98, 0.25);
     transition: all 0.3s ease;
     display: inline-block;
     text-align: center;
@@ -193,16 +195,16 @@ h2 {
 
 .btn:hover,
 .btn:active {
-    background: #8b738f; /* tono más claro del morado */
+    background: rgb(95, 102, 84); /* más oscuro al hacer hover */
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(107, 89, 122, 0.3);
+    box-shadow: 0 6px 12px rgba(111, 119, 98, 0.35);
 }
 
 .btn:active {
     transform: translateY(0);
 }
 
-/* Asegurar que los botones en las cards se centren y no se desborden */
+/* Asegurar que los botones en las cards se centren */
 .card .btn {
     width: 100%;
     max-width: 200px;
@@ -237,7 +239,7 @@ h2 {
 
 /* Footer */
 .footer {
-    background: #6b597a;
+    background: rgb(111, 119, 98); /* ¡Footer ahora en verde oliva! */
     color: white;
     font-size: 0.9rem;
     padding: 1rem 10px;
@@ -278,7 +280,7 @@ h2 {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(95, 75, 100, 0.95); /* color principal con opacidad */
+        background: rgba(111, 119, 98, 0.95); /* Menú móvil en verde oliva */
         flex-direction: column;
         padding: 0.75rem 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -308,6 +310,7 @@ h2 {
         border-radius: 0;
         transform: none;
         box-shadow: none;
+        color: white;
     }
 
     .nav a:hover {
@@ -409,4 +412,3 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
