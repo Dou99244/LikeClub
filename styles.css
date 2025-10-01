@@ -9,12 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
-    overflow-x: hidden; /* Evita scroll horizontal en mobile */
+    background-color: #eeeeee; /* color base modificado */
+    overflow-x: hidden;
 }
 
 html {
-    scroll-behavior: smooth; /* Scroll suave en desktop y mobile */
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -25,7 +25,7 @@ html {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #afa3bb 0%, #5f4b64 100%); /* degradado modificado */
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -48,7 +48,7 @@ html {
 }
 
 .hamburger {
-    display: none; /* Oculto en desktop */
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -76,14 +76,14 @@ html {
 }
 
 .btn-login {
-    background: #ff6b6b;
+    background: #a2ac94; /* verde claro */
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .btn-login:hover {
-    background: #ff5252;
+    background: #6f7762; /* verde oscuro */
 }
 
 /* Main */
@@ -108,7 +108,7 @@ html {
 h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #667eea;
+    color: #afa3bb; /* color secundario */
     font-size: 1.8rem;
 }
 
@@ -154,7 +154,7 @@ h2 {
 }
 
 .btn {
-    background: #667eea;
+    background: #5f4b64; /* color principal */
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -164,12 +164,12 @@ h2 {
     width: 100%;
     margin-top: 1rem;
     font-size: 1rem;
-    min-height: 48px; /* Touch-friendly en mobile */
+    min-height: 48px;
 }
 
 .btn:hover,
 .btn:active {
-    background: #5a67d8;
+    background: #4d3c52; /* tono más oscuro del morado */
 }
 
 /* Formulario de Reseñas */
@@ -200,7 +200,7 @@ h2 {
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #5f4b64; /* color principal */
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -226,7 +226,6 @@ h2 {
         margin-bottom: 1.5rem;
     }
 
-    /* Menú Hamburguesa en Mobile - MÁS COMPACTO */
     .hamburger {
         display: block;
     }
@@ -237,9 +236,9 @@ h2 {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(102, 126, 234, 0.95);
+        background: rgba(95, 75, 100, 0.95); /* color principal con opacidad */
         flex-direction: column;
-        padding: 0.75rem 0; /* Reducido de 1rem */
+        padding: 0.75rem 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
@@ -249,7 +248,7 @@ h2 {
 
     .nav ul {
         flex-direction: column;
-        gap: 0.75rem; /* Reducido de 1rem para menos espacio vertical */
+        gap: 0.75rem;
         width: 100%;
         text-align: center;
         padding: 0 15px;
@@ -261,9 +260,9 @@ h2 {
 
     .nav a {
         display: block;
-        padding: 0.75rem; /* Reducido de 1rem para enlaces más cortos */
+        padding: 0.75rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-        font-size: 0.95rem; /* Fuente ligeramente más pequeña para compactar */
+        font-size: 0.95rem;
     }
 
     .hero {
@@ -274,7 +273,7 @@ h2 {
 
     .hero-img {
         max-width: 100%;
-        order: -1; /* Imagen arriba */
+        order: -1;
     }
 
     .hero-text {
@@ -298,7 +297,6 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    /* Small Mobile - Aún más compacto si es necesario */
     body {
         font-size: 0.95rem;
     }
@@ -321,7 +319,6 @@ h2 {
         padding: 0 10px;
     }
 
-    /* Menú extra compacto en small screens */
     .nav {
         padding: 0.5rem 0;
     }
@@ -336,7 +333,6 @@ h2 {
     }
 }
 
-/* Desktop: Mejoras específicas */
 @media (min-width: 769px) {
     .hamburger {
         display: none !important;
@@ -350,5 +346,3 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
