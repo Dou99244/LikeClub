@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btnLogin) {
         btnLogin.addEventListener('click', function(e) {
             e.preventDefault();
-            alert('Redirigiendo a login... (Integra con tu backend para autenticación con Usuarios).');
+          window.location.href = "http://localhost/LikeClubLoggin/acceso.php";
+
             toggleMenu(); // Cierra menú si está abierto
         });
     }
@@ -83,4 +84,5 @@ function toggleMenu() {
         nav.classList.toggle('active');
     }
 }
+
 
