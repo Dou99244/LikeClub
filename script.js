@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btnLogin) {
         btnLogin.addEventListener('click', function(e) {
             e.preventDefault();
-          window.location.href = "http://192.168.56.1/LikeClubLoggin/acceso.php";
+          window.location.href = "http://192.168.70.195/LikeClubLoggin/acceso.php";
 
 
             toggleMenu(); // Cierra menú si está abierto
@@ -85,6 +85,7 @@ function toggleMenu() {
         nav.classList.toggle('active');
     }
 }
+
 
 
 
